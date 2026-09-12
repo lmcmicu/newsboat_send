@@ -16,7 +16,7 @@ Currently, the effect of this command is just to createe the directory `~/.newsb
 
 These instructions presuppose that `newsboat`, `pandoc`, `mutt`, and `sqlite` are installed on your (Linux) system.
 
-You should also have run `newsboat` at least once (for instructions on setting up `newsboat` see their [home page](https://newsboat.org/)).
+You should also have run `newsboat` at least once (for instructions on setting up `newsboat` see [newsboat's home page](https://newsboat.org/)).
 
 ## Usage
 
