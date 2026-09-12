@@ -41,6 +41,7 @@ then
         author=$(sqlite3 $DB "select author from rss_item where id = $id")
         content=$(sqlite3 $DB "select content from rss_item where id = $id")
         tmpfile=/var/tmp/newsboat_email.$id.$$
+        trap '/bin/rm -f $tmpfile; exit 1' 1 2 15
         {
             echo "$url"
             echo
