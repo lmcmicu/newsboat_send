@@ -10,7 +10,7 @@ given user using mutt.
 
 ### Prerequisites
 
-1. `newsboat`, `pandoc`, `mutt`, and `sqlite` should already be installed on your (Linux) system (see the links above for more information on how to install them).
+1. `newsboat`, `pandoc`, `mutt`, and `sqlite` should already be installed on your (UNIX/Linux) system (see the links above for more information on how to install them).
 
 2. You should also have run `newsboat` at least once in order to create the newsboat database (for instructions on setting up `newsboat` see [newsboat's home page](https://newsboat.org/)).
 
@@ -28,7 +28,7 @@ Simply execute:
 
 		USER=user newsboat_send
         
-where `user` can be a valid email address, e.g., `janedoe@mydomain.org`, or Linux username (e.g., `mike`). If unspecified, the default is the current Linux user's username. It is up to you to ensure that `user` is a valid destination and that your system is capable of sending emails to it (see [exim](https://www.exim.org/) or [postfix](https://www.postfix.org/) for more information).
+where `user` can be a valid email address, e.g., `janedoe@mydomain.org`, or UNIX/Linux username (e.g., `mike`). If unspecified, the default is the current UNIX/Linux user's username. It is up to you to ensure that `user` is a valid destination and that your system is capable of sending emails to it (see [exim](https://www.exim.org/) or [postfix](https://www.postfix.org/) for more information).
 
 ## Running as an (ana)cronjob
 
