@@ -12,7 +12,7 @@ given user using mutt.
 
         make setup
         
-Currently, the effect of this command is just to createe the directory `~/.newsboat/logs/` if it is not created already.
+Currently, the effect of this command is just to create the directory `~/.newsboat/logs/` if it is not created already.
 
 These instructions presuppose that `newsboat`, `pandoc`, `mutt`, and `sqlite` are installed on your (Linux) system.
 
@@ -24,7 +24,7 @@ Simply execute:
 
 		USER=user newsboat_send
         
-where `user` can be a valid email address, e.g., `janedoe@mydomain.org`, or Linux username (e.g., `mike`).
+where `user` can be a valid email address, e.g., `janedoe@mydomain.org`, or Linux username (e.g., `mike`). If unspecified, the default is the current Linux user's username. It is up to you to ensure that `user` is a valid destination and that your system is capable of sending emails to it (see [exim](https://www.exim.org/) or [postfix](https://www.postfix.org/) for more information).
 
 ## Running as an (ana)cronjob
 
