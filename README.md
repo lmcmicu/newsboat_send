@@ -8,15 +8,19 @@ given user using mutt.
 
 ## Setup
 
-1. In the repository directory, run
+### Prerequisites
+
+1. `newsboat`, `pandoc`, `mutt`, and `sqlite` should already be installed on your (Linux) system (see the links above for more information on how to install them).
+
+2. You should also have run `newsboat` at least once in order to create the newsboat database (for instructions on setting up `newsboat` see [newsboat's home page](https://newsboat.org/)).
+
+### Creating the `~/.newsboat/logs/` directory
+
+1. In the repository's root directory, run
 
         make setup
         
-Currently, the effect of this command is just to create the directory `~/.newsboat/logs/` if it is not created already.
-
-These instructions presuppose that `newsboat`, `pandoc`, `mutt`, and `sqlite` are installed on your (Linux) system.
-
-You should also have run `newsboat` at least once (for instructions on setting up `newsboat` see [newsboat's home page](https://newsboat.org/)).
+Currently, the effect of this command is just to create the directory `~/.newsboat/logs/` if it is not created already. From now on, whenever you run `newsboat_send` it will generate a new log file in that directory which you can use to troubleshoot any issues.
 
 ## Usage
 
