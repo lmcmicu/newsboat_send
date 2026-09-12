@@ -22,11 +22,9 @@ You should also have run `newsboat` at least once (for instructions on setting u
 
 Simply execute:
 
-		newsboat_send
+		USER=user newsboat_send
         
-alternately:
-
-		bash newsboat_send
+where `user` can be a valid email address, e.g., `janedoe@mydomain.org`, or Linux username (e.g., `mike`).
 
 ## Running as an (ana)cronjob
 
