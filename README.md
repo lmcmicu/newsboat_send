@@ -32,4 +32,14 @@ where `user` can be a valid email address, e.g., `janedoe@mydomain.org`, or UNIX
 
 ## Running as an (ana)cronjob
 
-To run as a daily (ana)cronjob, add a wrapper (e.g., `custom-newsboat`) to `/etc/cron.daily/`.
+To run as a daily (ana)cronjob, add a wrapper, invoking `newsboat_send`, to `/etc/cron.daily/`. E.g.,
+
+	[bash]$ cat /etc/cron.daily/custom-newsboat 
+	#!/bin/bash
+	
+	su -l - mike -c "~/bin/newsboat_send"
+	
+	# Cleanup
+	su -l - mike -c "~/bin/newsboat_send -X"
+	su -l - mike -c "find ~/.newsboat/logs/ -mindepth 1 -mtime +7 -exec rm {} \;"
+	[bash]$
