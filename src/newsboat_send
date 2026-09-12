@@ -74,7 +74,7 @@ then
             echo "$content" | pandoc -f html -t plain
             echo
         } > $tmpfile
-        mutt -s "New news from $domain: $title ($author)" $USER < $tmpfile
+        mutt -s "News from $domain: $title ($author)" $USER < $tmpfile
         rm -f $tmpfile
         # Now mark this item as unread:
         sqlite3 $DB "update rss_item set unread = 0 where id = $id"
