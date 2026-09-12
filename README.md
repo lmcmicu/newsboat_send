@@ -8,13 +8,11 @@ given user using mutt.
 
 ## Setup
 
-These instructions presuppose that `newsboat`, `pandoc`, `mutt`, and `sqlite` are installed on your (Linux) system.
+1. These instructions presuppose that `newsboat`, `pandoc`, `mutt`, and `sqlite` are installed on your (Linux) system.
 
-You should also have run `newsboat` at least once (for instructions on setting up `newsboat` see their home page).
+2. You should also have run `newsboat` at least once (for instructions on setting up `newsboat` see their home page).
 
-1. Edit the file [`newsboat_send`](https://github.com/lmcmicu/newsboat_send/blob/main/src/newsboat_send) and set the variable `USER` to the email address (or Linux username) that you would like emails to be sent to.
-
-2. Create a new directory `~/.newsboat/logs/`
+3. Make sure to create the directory `~/.newsboat/logs/` if it is not created already.
 
 ## Usage
 
