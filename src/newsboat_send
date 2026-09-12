@@ -27,6 +27,31 @@
 
 # Verified to work with Newsboat 2.36.
 
+which newsboat > /dev/null
+if [ $? -ne 0 ]
+then
+    echo "Newsboat must be installed first."
+    exit 1
+fi
+which pandoc > /dev/null
+if [ $? -ne 0 ]
+then
+    echo "Pandoc must be installed first."
+    exit 1
+fi
+which mutt > /dev/null
+if [ $? -ne 0 ]
+then
+    echo "Mutt must be installed first."
+    exit 1
+fi
+which sqlite3 > /dev/null
+if [ $? -ne 0 ]
+then
+    echo "SQLite must be installed first."
+    exit 1
+fi
+
 DB=~/.newsboat/cache.db
 LOGFILE=~/.newsboat/logs/newsboat-$(date +"%Y%m%d%H%M").log
 
