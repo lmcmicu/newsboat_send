@@ -25,6 +25,8 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ##
 
+# Verified to work with Newsboat 2.36.
+
 DB=~/.newsboat/cache.db
 LOGFILE=~/.newsboat/logs/newsboat-$(date +"%Y%m%d%H%M").log
 
