@@ -14,7 +14,7 @@ You should also have run `newsboat` at least once (for instructions on setting u
 
 1. Edit the file [`newsboat_send`](https://github.com/lmcmicu/newsboat_send/blob/main/src/newsboat_send) and set the variable `USER` to the email address (or Linux username) that you would like emails to be sent to.
 
-2. Created a new directory `~/.newsboat/logs/`
+2. Create a new directory `~/.newsboat/logs/`
 
 ## Usage
 
