@@ -34,7 +34,7 @@ To run as a daily (ana)cronjob, add a wrapper, invoking `newsboat_send`, to `/et
 #!/bin/bash
 
 su -l - mike -c "~/bin/newsboat_send"
-su -l - mike -c "~/bin/newsboat_send -X"
+su -l - mike -c "newsboat -X"
 su -l - mike -c "find ~/.newsboat/logs/ -mindepth 1 -mtime +7 -exec rm {} \;"
 <strong>[bash]$</strong>
 </pre>
